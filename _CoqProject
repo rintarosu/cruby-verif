@@ -1,0 +1,5 @@
+-Q theories CRubyVerif
+
+theories/util/scan_digits.v
+theories/util/scan_digits_theory.v
+theories/util/scan_digits_verif.v

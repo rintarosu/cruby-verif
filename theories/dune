@@ -1,0 +1,7 @@
+(rocq.theory
+ (name CRubyVerif)
+ (package cruby-verif)
+ (theories Stdlib compcert VST Flocq Ltac2)
+ (synopsis "Verification of functions extracted from CRuby using VST"))
+
+(include_subdirs qualified)

@@ -1,0 +1,15 @@
+Makefile.rocq
+Makefile.rocq.conf
+.Makefile.rocq.d
+_build
+*~
+*.d
+*.aux
+*.glob
+*.vo
+*.vio
+*.vok
+*.vos
+.lia.cache
+.nia.cache
+.DS_Store

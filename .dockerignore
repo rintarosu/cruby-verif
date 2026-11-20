@@ -1,0 +1,7 @@
+.git
+_build
+*.vo
+*.vok
+*.vos
+*.glob
+*.aux

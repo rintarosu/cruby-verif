@@ -1,0 +1,30 @@
+opam-version: "2.0"
+maintainer: "rintarosu"
+version: "dev"
+
+homepage: "https://github.com/rintarosu/cruby-verif"
+dev-repo: "git+https://github.com/rintarosu/cruby-verif.git"
+bug-reports: "https://github.com/rintarosu/cruby-verif/issues"
+license: "BSD-2-Clause"
+
+synopsis: "Verification of functions extracted from CRuby using VST"
+description: """
+Functions extracted from the CRuby interpreter, translated to Clight with
+clightgen, and verified with the Verified Software Toolchain."""
+
+build: [make "-j%{jobs}%"]
+install: [make "install"]
+depends: [
+  "coq" {>= "9.0"}
+  "coq-compcert" {>= "3.16" & < "3.18"}
+  "coq-vst" {>= "2.16" & < "3~"}
+]
+
+tags: [
+  "keyword:program verification"
+  "keyword:Ruby"
+  "logpath:CRubyVerif"
+]
+authors: [
+  "rintarosu"
+]

@@ -1,0 +1,5 @@
+(rule
+ (target scan_digits.v)
+ (deps ../../src/util/scan_digits.c)
+ (action (run clightgen -o %{target} -normalize %{deps}))
+ (mode fallback))

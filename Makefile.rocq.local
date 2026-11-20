@@ -1,0 +1,7 @@
+# Regenerate Clight files from C sources: `make clight` (requires clightgen).
+# This is an explicit target rather than a file dependency, so a plain `make`
+# never regenerates the committed files (output depends on the architecture).
+clight:
+	clightgen -o theories/util/scan_digits.v -normalize src/util/scan_digits.c
+
+.PHONY: clight
