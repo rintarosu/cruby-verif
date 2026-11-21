@@ -5,7 +5,7 @@
 # Package versions follow cruby-verif.opam, which CI also uses.
 FROM ocaml/opam:debian-12-ocaml-4.14
 
-ARG ROCQ_VERSION=9.1.0
+ARG ROCQ_VERSION=9.1.1
 
 RUN opam repo add rocq-released https://rocq-prover.org/opam/released \
  && opam update \
