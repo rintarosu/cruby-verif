@@ -1,5 +1,12 @@
 /* Extracted from CRuby util.c (ruby_scan_digits) for verification with VST.
  * Source: ruby/ruby@3e6368577177b3c3e2119fec09fb0f69edccabee util.c
+ *
+ * Original copyright notice of util.c:
+ *   Copyright (C) 1993-2008 Yukihiro Matsumoto
+ * CRuby is dual-licensed under the Ruby License and the 2-clause BSD license.
+ * This file is redistributed under the 2-clause BSD license; see
+ * src/LICENSE.CRuby.
+ *
  * Changes from the original:
  *  - ssize_t / size_t are replaced by long / unsigned long (LP64)
  *  - RBIMPL_ASSERT_OR_ASSUME(2 <= base <= 36) is moved to the precondition

@@ -3,8 +3,10 @@ BSD 2-Clause License
 Copyright (c) 2026, rintarosu
 All rights reserved.
 
-Files under src/ are extracted from CRuby and remain under CRuby's
-copyright; see src/LICENSE.CRuby.
+The C files under src/ and the Clight files generated from them by clightgen
+(theories/util/scan_digits.v) contain code extracted from CRuby. That code
+remains copyrighted by Yukihiro Matsumoto and is redistributed under the
+2-clause BSD license; see src/LICENSE.CRuby.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:

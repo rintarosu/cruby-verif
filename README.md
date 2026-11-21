@@ -78,5 +78,17 @@ make clight   # inside the Docker container
 ## License
 
 - Proofs and build files: [BSD-2-Clause](LICENSE)
-- Code under `src/` is extracted from CRuby, which is distributed under the
-  Ruby License or the BSD-2-Clause license; see [`src/LICENSE.CRuby`](src/LICENSE.CRuby).
+- C code under `src/`, and the Clight files generated from it, contain code
+  extracted from CRuby (Copyright (C) Yukihiro Matsumoto). CRuby is dual-licensed
+  under the Ruby License and the 2-clause BSD license; this repository
+  redistributes that code under the 2-clause BSD license.
+  See [`src/LICENSE.CRuby`](src/LICENSE.CRuby).
+
+### CompCert and clightgen
+
+`clightgen` and most of CompCert are distributed under the
+[INRIA Non-Commercial License Agreement](https://github.com/AbsInt/CompCert/blob/master/LICENSE),
+which permits use for educational, research or evaluation purposes only.
+This project uses them for research. Commercial use requires a separate
+license from AbsInt. The generated Clight files are committed so that the
+proofs can be checked without running `clightgen`.
