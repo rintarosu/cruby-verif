@@ -13,3 +13,4 @@ _build
 .lia.cache
 .nia.cache
 .DS_Store
+.vscode/
